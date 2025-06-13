@@ -1,11 +1,11 @@
-
+# versão beta 1.0
 import pandas as pd
 import pywhatkit
 import time
 import random
 
 # === CONFIGURAÇÕES ===
-ARQUIVO_PLANILHA = r"C:\Users\Amanda\OneDrive\Documents\mensagem_whatsapp\alunos.xlsx" # nome do arquivo da planilha
+ARQUIVO_PLANILHA = r"C:\Users\Amanda\OneDrive\Documents\GitHub\my-codes\mensagem_whatsapp\alunos.xlsx" # nome do arquivo da planilha
 TEMPO_MINIMO = 5    # segundos mínimos entre mensagens
 TEMPO_MAXIMO = 30   # segundos máximos entre mensagens
 

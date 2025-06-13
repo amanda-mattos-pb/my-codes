@@ -1,0 +1,113 @@
+Aqui está um README completo, pronto para você colocar na página inicial do seu repositório no GitHub:
+
+---
+
+# 📲 Automação de Envio de Mensagens no WhatsApp via Selenium
+
+Este projeto permite o envio automático de mensagens personalizadas para alunos via WhatsApp Web, utilizando **Python**, **Selenium** e uma planilha Excel como base de dados.
+
+---
+
+## ✅ Funcionalidades
+
+* Envia mensagens diferentes para alunos **ativos** e **alunos com pagamento pendente**.
+* Adiciona um **tempo aleatório entre 5 e 30 segundos** entre os envios (para parecer mais humano).
+* No final, envia uma **mensagem-resumo** para um número específico com o total de mensagens enviadas, número de alunos ativos e número de alunos pendentes.
+* Reutiliza a **mesma aba do navegador**, sem abrir uma nova aba a cada mensagem.
+
+---
+
+## ✅ Requisitos
+
+* **Python 3.x** instalado.
+* **Google Chrome** instalado.
+* **Chromedriver** compatível com a sua versão do Chrome.
+
+Baixe o **Chromedriver** aqui:
+[https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
+
+---
+
+## ✅ Instalação das Dependências
+
+Abra o terminal (CMD) e rode:
+
+```bash
+pip install selenium pandas openpyxl
+```
+
+---
+
+## ✅ Estrutura de Arquivos
+
+```
+mensagem_whatsapp/
+├── whatsapp_automation.py
+├── alunos.xlsx
+└── README.md
+```
+
+* **whatsapp\_automation.py** → Código Python principal.
+* **alunos.xlsx** → Planilha com os dados dos alunos.
+* **README.md** → Este arquivo.
+
+---
+
+## ✅ Exemplo de Planilha (alunos.xlsx)
+
+| Nome        | Telefone    | Status | Pagamento |
+| ----------- | ----------- | ------ | --------- |
+| João Silva  | 88991234567 | Ativo  | Em dia    |
+| Maria Souza | 88998765432 | Ativo  | Pendente  |
+
+* **Telefone** → Sem espaços, apenas DDD + número.
+* **Status** → Apenas quem está como "Ativo" recebe.
+* **Pagamento** → "Em dia" ou "Pendente"/"Atrasado".
+
+---
+
+## ✅ Como Usar
+
+1. Abra o CMD na pasta do projeto:
+
+```bash
+cd C:\Users\SeuUsuario\Documents\mensagem_whatsapp
+```
+
+2. Execute o script:
+
+```bash
+python whatsapp_automation.py
+```
+
+3. O navegador abrirá o **WhatsApp Web**.
+   Faça o login escaneando o QR Code.
+
+4. As mensagens serão enviadas uma por uma.
+
+---
+
+## ✅ Configurações no Código
+
+* ✅ Tempo entre as mensagens → Variável `TEMPO_MIN` e `TEMPO_MAX`
+* ✅ Número para receber o **resumo final** → Edite a variável `NUMERO_RESUMO`
+* ✅ Caminho do Chromedriver → Modifique a variável `CHROMEDRIVER_PATH`
+
+---
+
+## ✅ Observações Importantes
+
+* **Mantenha o navegador aberto durante todo o envio!**
+* Se quiser, altere as mensagens diretamente no código.
+* O WhatsApp pode bloquear o envio se detectar envios suspeitos em alta quantidade.
+  Mantenha um intervalo humano entre as mensagens.
+
+---
+
+## ✅ Contribuições
+
+Sinta-se à vontade para abrir issues ou fazer um fork para melhorias!
+
+---
+
+Quer que eu inclua esse README direto no ZIP e te gere um novo link?
