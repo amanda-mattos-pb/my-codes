@@ -8,7 +8,7 @@ import random
 
 # === CONFIGURAÇÕES ===
 CHROMEDRIVER_PATH = r"C:\Users\Amanda\OneDrive\Documents\GitHub\my-codes\mensagem_whatsapp\chromedriver-win64\chromedriver-win64\chromedriver.exe"  # Caminho para o chromedriver
-PLANILHA = r"C:\Users\Amanda\OneDrive\Documents\mensagem_whatsapp\alunos.xlsx"  # Caminho da planilha
+PLANILHA = r"C:\Users\Amanda\OneDrive\Documents\GitHub\my-codes\mensagem_whatsapp\alunos.xlsx"  # Caminho da planilha
 TEMPO_MIN = 5
 TEMPO_MAX = 30
 NUMERO_RESUMO = "+5583999944947"  # Número que recebe o resumo final
