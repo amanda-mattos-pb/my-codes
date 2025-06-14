@@ -5,10 +5,11 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 import time
 import random
-
+import os
 # === CONFIGURAÇÕES ===
-CHROMEDRIVER_PATH = r"C:\Users\Amanda\OneDrive\Documents\GitHub\my-codes\mensagem_whatsapp\chromedriver-win64\chromedriver-win64\chromedriver.exe"  # Caminho para o chromedriver
-PLANILHA = r"C:\Users\Amanda\OneDrive\Documents\GitHub\my-codes\mensagem_whatsapp\alunos.xlsx"  # Caminho da planilha
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CHROMEDRIVER_PATH = os.path.join(BASE_DIR,"chromedriver.exe") # lembrado  que tem uue salva os  aarquivos do chrome drive no mesmo diretro que esse cdigo 
+PLANILHA = os.path.join(BASE_DIR,"alunos.xlsx")  # Caminho da planilha
 TEMPO_MIN = 5
 TEMPO_MAX = 30
 NUMERO_RESUMO = "+5583999944947"  # Número que recebe o resumo final
